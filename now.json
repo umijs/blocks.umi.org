@@ -4,5 +4,10 @@
   ],
   "env": {
     "NODE_ENV": "production"
-  }
+  },
+  "files": [
+    "src",
+    "package.json",
+    "config.local.json"
+  ]
 }

@@ -18,6 +18,13 @@ async function getBlocksWithCache() {
 const PORT = 3000;
 const app = express();
 
+app.get(`/`, (req, res) => {
+  res.json({
+    status: 'success',
+    data: `Checkout /api/blocks`,
+  })
+});
+
 app.get(`/api/blocks`, (req, res) => {
   getBlocksWithCache().then(blocks => {
     res.json({
