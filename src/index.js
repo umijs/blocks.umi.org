@@ -22,7 +22,15 @@ app.get(`/`, (req, res) => {
   res.json({
     status: 'success',
     data: `Checkout /api/blocks`,
-  })
+  });
+});
+
+app.get(`/api/cache/clean`, (req, res) => {
+  blocks = null;
+  res.json({
+    status: 'success',
+    data: `Reset blocks to null`,
+  });
 });
 
 app.get(`/api/blocks`, (req, res) => {
