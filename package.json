@@ -10,6 +10,6 @@
     "github-api": "^3.0.0"
   },
   "devDependencies": {
-    "now": "^12.1.14"
+    "now": "^13.1.3"
   }
 }

@@ -1,13 +1,13 @@
 {
+  "name": "blocks.umijs.org",
+  "version": 2,
+  "builds": [
+    { "src": "src/index.js", "use": "@now/node-server" }
+  ],
+  "routes": [
+    { "src": "^/(.+)?", "dest": "/src/index.js" }
+  ],
   "alias": [
     "blocks.umijs.org"
-  ],
-  "env": {
-    "NODE_ENV": "production"
-  },
-  "files": [
-    "src",
-    "package.json",
-    "config.local.json"
   ]
 }
